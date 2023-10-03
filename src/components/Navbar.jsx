@@ -5,6 +5,10 @@ import logo from "../assets/logo.svg"
 
 export default function(){
 
+    /*
+        This piece of state is to control the open and closed state of the mobile menu (which is only visible on small screens) 
+    */
+
     const [ showMobileMenu, setShowMobileMenu ] = useState(false)
 
     function toggleShowMobileMenu(){

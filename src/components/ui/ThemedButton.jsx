@@ -1,4 +1,8 @@
 export default function ThemedButton(props){
+    /*
+        This component has dynamic styles that can be toggled by passing it props. 
+        the tailwind classes are built using the buildClasses function. I did this to keep the code readable 
+    */ 
     const {
         children,
         type,

@@ -1,6 +1,10 @@
 import ThemedHeading from "../ui/ThemedHeading"
 
 export default function Footer(){
+    /*
+        Not much to say here. 
+        All of this component is hardcoded
+    */ 
     return(
         <div className="bg-primary-dark py-[70px]">
             <div className="contain">

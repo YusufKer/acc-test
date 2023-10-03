@@ -2,6 +2,9 @@ import heroImage from "../../assets/Hero-Image.png"
 import ThemedButton from "../ui/ThemedButton"
 
 export default function Hero(){
+    /*
+        Not much to say here. This is just the main banner
+    */ 
     return (
         <div className="bg-cover tablet:aspect-12/5 bg-center" style={{backgroundImage:`url(${heroImage})`}}>
             <div className="contain h-full py-[86px] flex flex-col gap-7 justify-end">

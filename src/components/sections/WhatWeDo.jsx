@@ -7,6 +7,10 @@ import UXIcon from "../../assets/icons/UXIcon.svg"
 
 export default function WhatWeDo(){
 
+    /*
+        I Hard coded this services array. I believe this data would usualy come from a CMS
+        I did this so that I wouldn't have to repeat JSX code for each service
+    */ 
     const services = [
         {
             image:WebDevIcon,
@@ -30,6 +34,10 @@ export default function WhatWeDo(){
         },
     ]
 
+    /*
+        I created this function to render the services.
+        I developed this preference because I find it to be easier for me to read.
+    */ 
     const renderServices = () => services.map(item => (
         <div key={item.title} className="flex flex-col space-y-6 tablet:space-y-[58px]">
             <img src={item.image} alt="logo" title={item.title} width="64" height="64" className="object-cover object-center"/>
