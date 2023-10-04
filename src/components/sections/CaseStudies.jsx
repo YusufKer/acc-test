@@ -19,11 +19,10 @@ export default function CaseStudies(){
     const renderCaseStudies = () => caseStudies.map((caseStudy,index) => <CaseStudyCard noSnap={index === 0} caseStudy={caseStudy} key={caseStudy.title}/>)
 
     /*
-        The carousel that I build uses the browsers native scrolling capabilities
-        I find that this provides the smoothes scrolling interface on touch screens
+        The carousel that I built uses the browsers native scrolling capabilities
+        I find that this provides the smoothest scrolling interface on touch screens
         on desktop, when the cards are too big for the container, buttons become visible which allow you to adjust what you see using scrollLeft 
     */ 
-
 
     function scrollCards(direction){
         const currentScrollValue = scrollContainer.current.scrollLeft
@@ -49,7 +48,6 @@ export default function CaseStudies(){
             }finally{
                 setTimeout(()=>setIsLoading(false),1000)
             }
-
         }
         fetchCaseStudies()
     },[])

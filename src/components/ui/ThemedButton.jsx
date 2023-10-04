@@ -11,6 +11,7 @@ export default function ThemedButton(props){
         size,
         full
     } = props
+
     function buildClasses(){
         let classNames = ""
         switch(type){
@@ -38,6 +39,7 @@ export default function ThemedButton(props){
         }
         return classNames
     }
+    
     return(
         <button title={title} className={`${buildClasses()} font-bold hover:bg-opacity-75 transition-opacity duration-500`}>
             {children}
