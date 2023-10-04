@@ -7,6 +7,7 @@ Demo:
 To view the project live, visit: https://acc-test-6caf3.web.app/
 
 Technologies Used:
+* Vite 
 * React: "^18.2.0"
 * Tailwind CSS: "^3.3.3",
 
